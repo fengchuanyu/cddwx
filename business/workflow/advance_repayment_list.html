@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="../../resources/css/base/repayment.css"/>
         <link rel="stylesheet" type="text/css" href="../../resources/css/weui/dist/style/weui.css"/>
         <script src="../../js/base/zepto.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../js/base/global.js" type="text/javascript" charset="utf-8"></script>
+       
         <title>提前还款</title>
     </head>
     <body>
@@ -21,7 +23,7 @@
                 <label class="weui-cell weui-check__label" for="arlc1">
                     <div class="weui-cell__hd">
                         <div class="arl_cell_left">
-                            <input type="checkbox" class="weui-check" name="checkbox1" id="arlc1" checked="checked">
+                            <input type="checkbox" class="weui-check" name="checkbox1" id="arlc1" checked="checked" value="50000">
                             <i class="weui-icon-checked"></i>
                         </div>
                         <div class="arl_cell_left" style="display: inline-block;">
@@ -39,7 +41,7 @@
                 <label class="weui-cell weui-check__label" for="arlc2">
                     <div class="weui-cell__hd">
                         <div class="arl_cell_left">
-                            <input type="checkbox" class="weui-check" name="checkbox1" id="arlc2">
+                            <input type="checkbox" class="weui-check" name="checkbox1" id="arlc2" value="50000">
                             <i class="weui-icon-checked"></i>
                         </div>
                         <div class="arl_cell_left" style="display: inline-block;">
@@ -57,7 +59,7 @@
                 <label class="weui-cell weui-check__label" for="arlc3">
                     <div class="weui-cell__hd">
                         <div class="arl_cell_left">
-                            <input type="checkbox" class="weui-check" name="checkbox1" id="arlc3">
+                            <input type="checkbox" class="weui-check" name="checkbox1" id="arlc3" value="50000">
                             <i class="weui-icon-checked"></i>
                         </div>
                         <div class="arl_cell_left" style="display: inline-block;">
@@ -75,7 +77,7 @@
                 <label class="weui-cell weui-check__label" for="arlc4">
                     <div class="weui-cell__hd">
                         <div class="arl_cell_left">
-                            <input type="checkbox" class="weui-check" name="checkbox1" id="arlc4">
+                            <input type="checkbox" class="weui-check" name="checkbox1" id="arlc4" value="50000">
                             <i class="weui-icon-checked"></i>
                         </div>
                         <div class="arl_cell_left" style="display: inline-block;">
@@ -90,16 +92,12 @@
                         <p class="font-bolder"><span class="text_yellow">￥50,000</span></p>
                     </div>
                 </label>
-                
-                
                 <label class="weui-cell weui-check__label" for="arlcS" id="arlcAll">
                     <div class="weui-flex wf_bottom">
                         <div class="weui-flex__item">
-                            <div class="">
-                                <input type="checkbox" name="checkbox1" class="weui-check" id="arlcS">
-                                <i class="weui-icon-checked"></i>
-                                <span>全选</span>
-                            </div>
+                            <input type="checkbox" name="checkbox1" class="weui-check" id="arlcS" value="0">
+                            <i class="weui-icon-checked"></i>
+                            <span>全选</span>
                         </div>
                         <div class="weui-flex__item">
                             <div class="">
@@ -108,43 +106,103 @@
                         </div>
                         <div class="weui-flex__item">
                             <div class="">
-                            <p><span class="text_yellow font-bolder">￥100,000</span></p>
+                            <p><span class="text_yellow font-bolder" id="ordersSum">￥100,000</span></p>
                             </div>
                         </div>
                     </div> 
                 </label>
             </div>
             <div class="weui-btn-area">
-                <a class="weui-btn weui-btn_warn" href="javascript:" id="showTooltips">确定</a>
+                <a class="weui-btn weui-btn_warn test" id="showTooltips">确定</a>
             </div>
         </div>
 
-        <div class="pay_dialog cddd_dialog" id="payDialog" style="display: none;">
-            <div class="weui-mask"></div>
-            <div class="weui-dialog">
-                <div class="weui-dialog__bd">弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内</div>
-                <div class="weui-dialog__ft">
-                    <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">知道了</a>
+        <div class="cddd_dialog pay_dialog" id="cdddDialog" style="display: none;">
+            <div class="weui-mask close_dialog"></div>
+                <div class="weui-dialog">
+                    <div class="weui-dialog__hd">请输入支付密码</div>
+                    <div class="weui-dialog__bd num_content">
+                        <p>还款</p>
+                        <p id="finalMoney">￥50,000</p>
+                    </div>
+                    <div class="weui-dialog__bd">
+                        <a class="weui-cell weui-cell_access" href="javascript:;">
+                            <div class="weui-cell__hd">
+                            <img src="../../resources/images/bank_logo.gif" alt="" style="width:30px;margin:0 10px;display:block">
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>招商银行信用卡(9909)</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                    <div class="weui-dialog__bd">
+                        <table id="passwordTable">
+                            <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        </table>
+                        <input type="password" maxlength="6" id="pdInput">
+                    </div>
                 </div>
             </div>
         </div>
-
         <script type="text/javascript">
-        $("#showTooltips").click(function(){
-            $("#payDialog").show();
-            $("#payDialog").animate({opacity:1});
-
-        });
-        $("#arlcAll").click(function() {
-            var thisC= $(this).find(".weui-check");
-            if($(thisC).is(':checked')){
-                console.log("yes");
-                $('input[name="checkbox1"]').prop("checked",true);
-            }else{
-               console.log("no");
-               $('input[name="checkbox1"]').prop("checked",false);
-            }
-        });
+        $(function(){
+            var fMoney="￥50,000";
+            /*弹框js start*/
+            $("#showTooltips").on('click', function(){
+                $("#cdddDialog").fadeIn(200);
+                $("#pdInput").focus();
+                $("#finalMoney").html(fMoney);
+            });
+            $('.close_dialog').on('click', function(){
+                    $('#cdddDialog').fadeOut(200);
+            });
+            /*弹框js end*/
+            /*复选框 start*/
+            $('input[name="checkbox1"]').change(function(){
+                var i=0;
+                var orderSum=0;
+                var choseOrder=$("input[name='checkbox1']:checked");
+                for(i;i<choseOrder.length;i++){
+                    orderSum+=parseInt($(choseOrder).eq(i).val());
+                }
+                console.log(orderSum);
+                fMoney=formatMoney(orderSum, 0, "￥");/*调用global.js中的货币转换函数*/
+                $("#ordersSum").html(fMoney);
+            });
+            $("#arlcAll").click(function() {
+                var thisC= $(this).find(".weui-check");
+                if($(thisC).is(':checked')){
+                    console.log("yes");
+                    $('input[name="checkbox1"]').prop("checked",true);
+                }else{
+                   console.log("no");
+                   $('input[name="checkbox1"]').prop("checked",false);
+                }
+            });
+            /*复选框 end*/
+            /*支付弹框功能js start*/
+            $("#pdInput").keyup(function(){
+                var i=0;
+                var thisVal=$(this).val();
+                var thisLength=thisVal.length;
+                console.log(thisLength);
+                for(i;i<thisLength;i++){
+                    $("#passwordTable").find("td").eq(i).html('<i class="iconfont cddd-icon-point"></i>');
+                }
+                for(i;i<6;i++){
+                    $("#passwordTable").find("td").eq(i).html('');
+                }
+                if(thisLength==6){
+                    console.log(thisVal+"登录操作！");
+                }
+            });
+            /*支付弹框功能js end*/
+        })
         </script>
+
+
+
+        
     </body>
 </html>

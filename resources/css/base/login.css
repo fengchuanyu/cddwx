@@ -18,8 +18,8 @@
 }
 .center_info_spacing .cia_login_change{
 	margin-top: 1em;
-	color:#223CAB;
-	font-size: 16px;
+	color:#0e82cf;
+	font-size: 15px;
 }
 .login_bar .weui-vcode-btn{
 	color:#414141;
@@ -40,11 +40,12 @@
 .login_bar .weui-vcode-btn{
 	line-height: 1.8em;
 	height:1.6em;
-	width: 115px;
+	width: 90px;
+	text-align: center;
 }
 .info_spacing{
 	padding: 15px;
-	font-size: 13px;
+	font-size: 15px;
 }
 .info_spacing p{margin-bottom: 10px}
 .login_verify{

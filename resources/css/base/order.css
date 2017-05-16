@@ -90,7 +90,7 @@ margin-left: -40px
 .order_status_page .osp_list_left p{
 	text-align: right;
 }
-.order_status_page .osp_list_left .icon-icon-cancel{
+.order_status_page .osp_list_left .cddd-icon-cancel{
 	color: #e93e2d;
 	font-size: 25px;
 }
@@ -111,9 +111,6 @@ margin-left: -40px
 .order_status_page .cancel-text{
 	display: inline-block;
 	vertical-align:middle;
-}
-.order_status_page .weui-icon-cancel{
-	font-weight: bolder;
 }
 .order_status_page .weui-icon_msg-primary{
 	font-size: 23px;

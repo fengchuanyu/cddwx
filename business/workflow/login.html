@@ -7,6 +7,7 @@
 	    <link rel="stylesheet" type="text/css" href="../../resources/css/base/login.css"/>
 	    <link rel="stylesheet" type="text/css" href="../../resources/css/weui/dist/style/weui.css"/>
 	    <script src="../../js/base/zepto.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="../../js/base/verify.js" type="text/javascript" charset="utf-8"></script>
 		<title>登录</title>
 	</head>
 	<body>
@@ -15,18 +16,18 @@
 				<form>
 					<div class="weui-cells weui-cells_form">
 			            <div class="weui-cell">
-			            	<div class="weui-cell__hd"><label class="cddd-icon icon-user"></label></div>
+			            	<div class="weui-cell__hd"><label class="iconfont cddd-icon-user"></label></div>
 			                <div class="weui-cell__bd">
 			                    <input class="weui-input" type="number" placeholder="请输入手机号">
 			                </div>
 			            </div>
 			            <div class="weui-cell">
-			            	<div class="weui-cell__hd"><label class="cddd-icon icon-lock"></label></div>
+			            	<div class="weui-cell__hd"><label class="iconfont cddd-icon-lock"></label></div>
 			                <div class="weui-cell__bd">
 			                    <input class="weui-input" type="tel" placeholder="请输入验证码">
 			                </div>
 			                <div class="weui-cell__ft">
-			                    <button class="weui-vcode-btn">获取验证码</button>
+			                    <a class="weui-vcode-btn" href="javascript:;">获取验证码</a>
 			                </div>
 			            </div>
 			        </div>
@@ -46,22 +47,22 @@
 					<form>
 						<div class="weui-cells weui-cells_form">
 				            <div class="weui-cell">
-				            	<div class="weui-cell__hd"><label class="cddd-icon icon-user"></label></div>
+				            	<div class="weui-cell__hd"><label class="iconfont cddd-icon-user"></label></div>
 				                <div class="weui-cell__bd">
 				                    <input class="weui-input" type="number" placeholder="请输入手机号">
 				                </div>
 				            </div>
 				            <div class="weui-cell">
-				            	<div class="weui-cell__hd"><label class="cddd-icon icon-lock"></label></div>
+				            	<div class="weui-cell__hd"><label class="iconfont cddd-icon-lock"></label></div>
 				                <div class="weui-cell__bd">
-				                    <input class="weui-input" type="tel" placeholder="请输入密码">
+				                    <input class="weui-input" type="password" placeholder="请输入密码">
 				                </div>
 				                <div class="weui-cell__ft">
-				                    <button class="weui-vcode-btn">忘记密码</button>
+				                    <a class="weui-vcode-btn" href="javascript:;">忘记密码</a>
 				                </div>
 				            </div>
 				            <div class="weui-cell">
-				            	<div class="weui-cell__hd"><label class="cddd-icon icon-eye"></label></div>
+				            	<div class="weui-cell__hd"><label class="iconfont cddd-icon-browse"></label></div>
 				                <div class="weui-cell__bd">
 				                    <input class="weui-input" placeholder="请输入验证码" id="code_input" value="">
 				                </div>
@@ -75,15 +76,12 @@
 				        </div>
 				        <div class="info_spacing">
 				            <p class="text_blue">温馨提示 <a id="showPage" class="show_page">手机号登录</a></p>
-					        <p>为了您的账号安全，请及时修改密码。如忘记密码请联系管理员</p>    
+					        <p style="font-size: 13px">为了您的账号安全，请及时修改密码。如忘记密码请联系管理员</p>    
 					    </div>
 					</form>
 				</div>
 			</div>
 		</div>
-		
-	
-		
 		<script type="text/javascript">
 			var winW=$(window).width();
 			$(".cia_login_change").click(function(){
@@ -93,6 +91,17 @@
 			$("#showPage").on("click",function(){
 				$("#hidePage").css({left:winW});
 			});
+
+			var verifyCode = new GVerify("v_container");
+			$("#loginBtn").click(function(){
+				var res = verifyCode.validate($("#code_input").val());
+				if(res){
+					console.log("验证正确");
+				}else{
+					console.log("验证码错误");
+					event.stopPropagation();
+				}
+			});  
 		</script>
 </body>
 </html>

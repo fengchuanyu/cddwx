@@ -43,6 +43,12 @@ body{background-color:#f6f6f6;color: #666;font-size: 12px;}
 	margin-left: -88px;
 }
 /*icon start*/
+.red-icon{
+	width: 17px;
+	color: #e64340;
+	font-weight: bolder;
+}
+/*
 .cddd-icon{
 	position: relative;
     display: inline-block;
@@ -86,6 +92,7 @@ body{background-color:#f6f6f6;color: #666;font-size: 12px;}
 .icon-red-drawer{
 	background-position:-73px -21px;
 }
+*/
 /*css 箭头*/
 .icon-arrow1,.icon-arrow2{
     width:0;
@@ -182,6 +189,7 @@ body{background-color:#f6f6f6;color: #666;font-size: 12px;}
 	border-left: 1px solid #ddd;
 	border-right:1px solid #ddd; 
 }
+/*fontface  font icon*/
 @font-face {
 	font-family: "iconfont";
   	src:url('../../images/iconfont.ttf') format('truetype');
@@ -193,16 +201,113 @@ body{background-color:#f6f6f6;color: #666;font-size: 12px;}
   font-style:normal;
   -webkit-font-smoothing: antialiased;  
 }
-[class^="icon-icon-"]:before, [class*=" icon-icon-"]:before {
+[class^="cddd-icon-"]:before, [class*=" cddd-icon-"]:before {
     display: inline-block;
     margin-left: .2em;
     margin-right: .15em;
 }
-.icon-icon-cancel:before { 
-	content: "\e60b"; 
+.cddd-icon-cancel:before { content: "\e610"; }
+
+.cddd-icon-point:before {content: "\e611"; }
+
+.cddd-icon-edit:before { content: "\e606"; }
+
+.cddd-icon-label:before { content: "\e607"; }
+
+.cddd-icon-next:before { content: "\e608"; }
+
+.cddd-icon-user:before { content: "\e609"; }
+
+.cddd-icon-data:before { content: "\e60a"; }
+
+.cddd-icon-phone:before { content: "\e60b"; }
+
+.cddd-icon-warning:before { content: "\e60c"; }
+
+.cddd-icon-order:before { content: "\e60d"; }
+
+.cddd-icon-lock:before { content: "\e60e"; }
+
+.cddd-icon-money:before { content: "\e60f"; }
+
+.cddd-icon-add:before { content: "\e612"; }
+
+.cddd-icon-browse_fill:before { content: "\e613"; }
+
+.cddd-icon-browse:before { content: "\e614"; }
+
+.cddd-icon-red-packet:before { content: "\e615"; }
+
+.cddd-icon-line-chart:before { content: "\e616"; }
+
+.cddd-icon-headlines:before { content: "\e617"; }
+
+.cddd-icon-picture:before { content: "\e618"; }
+
+.cddd-icon-share:before { content: "\e619"; }
+
+.cddd-icon-setup:before { content: "\e61a"; }
+/*弹框样式*/
+.cddd_dialog .weui-dialog{
+	padding:0 10px;
+	background-color: #fefefe;
 }
-.cddd_dialog{
+.cddd_dialog .weui-dialog__bd{
+	position: relative;
+   	padding: 0.8em 0;
+    border-top: 1px solid #e5e5e5;
+    min-height: 20px;
+    color: #333;
+    font-size: 17px;
+}
+.cddd_dialog .weui-dialog__hd{
+	font-size: 20px;
+	color: #333;
+	padding:10px 0;
+}
+.pay_dialog .weui-cell{
+	padding:0;
+	text-align: left;
+	font-size: 15px;
+	color: #999
+}
+.pay_dialog .weui-dialog__bd table{
+	outline:#999 solid 1px;
+	border-collapse: collapse;
+	background-color: #fff;
+}
+.pay_dialog .weui-dialog__bd table td{
+	border:#ddd solid;
+	border-width:0 1px 0 0;
+	height: 40px;
+	width: 47px;
+}
+.pay_dialog .weui-dialog__bd table td .iconfont{
+	font-size: 30px;
+}
+.pay_dialog .weui-dialog__bd table td:last-child{
+	border-right: 0px;
+}
+.pay_dialog .num_content{
+	padding: 20px 0;
+}
+.pay_dialog .num_content p:first-child{
+	font-size: 15px;
+}
+.pay_dialog .num_content p:last-child{
+	font-size: 35px;
+}
+.pay_dialog input{
+	width: 110%;
+	height: 40px;
+	position: absolute;
+	top:13px;
+	left:0px;
 	opacity: 0;
+	outline:none;
 }
+
+
+
 
 
