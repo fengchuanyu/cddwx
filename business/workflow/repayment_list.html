@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="../../resources/css/base/main.css"/>
+        <link rel="stylesheet" type="text/css" href="../../resources/css/base/repayment.css"/>
+        <link rel="stylesheet" type="text/css" href="../../resources/css/weui/dist/style/weui.css"/>
+        <script src="../../js/base/zepto.js" type="text/javascript" charset="utf-8"></script>
+        <title>我的还款</title>
+    </head>
+    <body>
+        <div class="container repayment_list_page">
+           <div class="weui-flex wx-list-top">
+                <div class="weui-flex__item"><div class="placeholder">订单号</div></div>
+                <div class="weui-flex__item"><div class="placeholder olp_center">贷款金额</div></div>
+                <div class="weui-flex__item"><div class="placeholder">还款状态</div></div>
+            </div> 
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access">
+                    <div class="weui-cell__bd">
+                        <p>A102509</p>
+                    </div>
+                    <div class="weui-cell__bd text_yellow">3000元</div>
+                    <div class="weui-cell__ft">
+                        <span>已还清</span>
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <p>A102509</p>
+                    </div>
+                    <div class="weui-cell__bd text_yellow">3000元</div>
+                    <div class="weui-cell__ft">
+                        <span>已还清</span>
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <p>A102509</p>
+                    </div>
+                    <div class="weui-cell__bd text_yellow">3000元</div>
+                    <div class="weui-cell__ft">
+                        <span class="text-bold-red">逾期</span>
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <p>A102509</p>
+                    </div>
+                    <div class="weui-cell__bd text_yellow">3000元</div>
+                    <div class="weui-cell__ft">
+                        <span class="text-bold-blue">已还清</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="weui-footer">
+            <p class="weui-footer__text">Copyright © 2008-2016 weui.io</p>
+        </div>
+        <script type="text/javascript">
+            $(".link_my_account").click(function(){
+                window.location.href="account.html";
+            })
+        </script>
+</body>
+</html>

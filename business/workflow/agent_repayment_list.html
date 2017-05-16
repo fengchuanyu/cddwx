@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="../../resources/css/base/main.css"/>
+        <link rel="stylesheet" type="text/css" href="../../resources/css/base/order.css"/>
+        <link rel="stylesheet" type="text/css" href="../../resources/css/weui/dist/style/weui.css"/>
+        <script src="../../js/base/zepto.js" type="text/javascript" charset="utf-8"></script>
+        <title>我的订单</title>
+    </head>
+    <body>
+        <div class="container agent_repayment_list order_list_page">
+           <div class="weui-flex wx-list-top">
+                <div class="weui-flex__item"><div class="placeholder">收费项目</div></div>
+                <div class="weui-flex__item"><div class="placeholder olp_center">费用</div></div>
+                <div class="weui-flex__item"><div class="placeholder">是否可退</div></div>
+            </div> 
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access" href="order_detail.html">
+                    <div class="weui-cell__bd">
+                        <p>服务费</p>
+                    </div>
+                    <div class="weui-cell__bd text_yellow">3000元</div>
+                    <div class="weui-cell__ft">
+                        <span>逾期可退</span>
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <p>上抵费</p>
+                    </div>
+                    <div class="weui-cell__bd text_yellow">3000元</div>
+                    <div class="weui-cell__ft">
+                        <span>逾期可退</span>
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <p>加急放款费</p>
+                    </div>
+                    <div class="weui-cell__bd text_yellow">3000元</div>
+                    <div class="weui-cell__ft">
+                        <span>逾期可退</span>
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <p>暂住证</p>
+                    </div>
+                    <div class="weui-cell__bd text_yellow">3000元</div>
+                    <div class="weui-cell__ft">
+                        <span>逾期可退</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="weui-footer">
+            <p class="weui-footer__text">Copyright © 2008-2016 weui.io</p>
+        </div>
+        <script type="text/javascript">
+            $(".link_my_account").click(function(){
+                window.location.href="account.html";
+            })
+        </script>
+</body>
+</html>

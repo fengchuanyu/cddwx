@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="../../resources/css/base/main.css"/>
+        <link rel="stylesheet" type="text/css" href="../../resources/css/base/repayment.css"/>
+        <link rel="stylesheet" type="text/css" href="../../resources/css/weui/dist/style/weui.css"/>
+        <script src="../../js/base/zepto.js" type="text/javascript" charset="utf-8"></script>
+        <title>续贷申请</title>
+    </head>
+    <body>
+        <div class="container repayment_continue_list_page">
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="cell_left_text">
+                        <p>续贷周期</p>
+                    </div>
+                    <div class="weui-cell__bd select_text" id="repaymentDateChange">
+                        <a class="active">1个月</a><a>2个月</a><a>3个月</a>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="cell_left_text">
+                        <p>还款方式</p>
+                    </div>
+                    <div class="weui-cell__bd select_text_change">
+                        <div class="active">
+                            <a class="text_red">归还8%</a>
+                            <a class="">归本3%+1%垫资费</a>
+                        </div>
+                        <div class="">
+                            <a class="text_red">归还5%</a>
+                            <a class="">归本3%+1%垫资费</a>
+                        </div>
+                        <div class="">
+                            <a class="text_red">归还3%</a>
+                            <a class="">归本3%+1%垫资费</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cells__title">需待一个月需要归还本金3%</div>
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>垫资费</p>
+                    </div>
+                    <div class="weui-cell__ft">1,000</div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>归还本金</p>
+                    </div>
+                    <div class="weui-cell__ft">50,000</div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd"></div>
+                    <div class="weui-cell__ft">总计<span class="text_yellow font-bolder">￥50,000</span></div>
+                </div>
+            </div>
+            <div class="weui-btn-area">
+                <a class="weui-btn weui-btn_warn" href="javascript:" id="showTooltips">确定</a>
+            </div>
+        </div>
+        <script type="text/javascript">
+        var rDateChange=$("#repaymentDateChange").children("a");        
+        $(rDateChange).click(function(){
+            var thisIndex=$(rDateChange).index(this)
+            var textChange=$(".select_text_change").children("div");
+            $(rDateChange).removeClass("active");
+            $(this).addClass("active");
+            $(textChange).removeClass("active");
+            $(textChange).eq(thisIndex).addClass("active");
+        });
+        </script>
+    </body>
+</html>

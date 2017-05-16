@@ -1,0 +1,23 @@
+body{
+	background-color: #fff
+}
+.index_page .top_img{
+	line-height: 0;
+}
+.index_page .top_img img{
+	width: 100%;
+}
+.index_page .weui-grid{
+	width: 50%;
+}
+.index_page .weui-grid__icon{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 15px;
+}
+.index_page .weui-grid__icon + .weui-grid__label{
+	margin-top:16px;
+	color:#7b7b7b;
+	font-size: 16px;
+}

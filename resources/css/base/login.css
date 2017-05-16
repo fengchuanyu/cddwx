@@ -1,0 +1,53 @@
+.login_bar{
+	
+}
+.show_page{
+	position: absolute;
+	right: 20px;
+}
+.login_bar .weui-cells_form{
+	background-color: #fff;
+}
+.login_bar .weui-btn-area{
+	margin-top: 8px;
+}
+.center_info_spacing .cia_login{
+	font-size: 15px;
+	color: #999;
+	margin-top: 8px;
+}
+.center_info_spacing .cia_login_change{
+	margin-top: 1em;
+	color:#223CAB;
+	font-size: 16px;
+}
+.login_bar .weui-vcode-btn{
+	color:#414141;
+}
+.login_bar .weui-vcode-btn:active{
+	color: #E64340;
+}
+.login_bar .weui-cell__hd{
+	width: 31px;
+	height: 25px;
+}
+.text_info_img{
+	background: url(../img/person.png) no-repeat center;
+}
+.login_bar .weui-input{
+	height: 2em
+}
+.login_bar .weui-vcode-btn{
+	line-height: 1.8em;
+	height:1.6em;
+	width: 115px;
+}
+.info_spacing{
+	padding: 15px;
+	font-size: 13px;
+}
+.info_spacing p{margin-bottom: 10px}
+.login_verify{
+	width: 115px;
+	height: 38px;
+}

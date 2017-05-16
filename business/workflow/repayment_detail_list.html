@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="../../resources/css/base/main.css"/>
+        <link rel="stylesheet" type="text/css" href="../../resources/css/base/repayment.css"/>
+        <link rel="stylesheet" type="text/css" href="../../resources/css/weui/dist/style/weui.css"/>
+        <script src="../../js/base/zepto.js" type="text/javascript" charset="utf-8"></script>
+        <title>还款明细</title>
+    </head>
+    <body>
+        <div class="container repayment_detail_list_page">
+           <div class="page__bd">
+                <div class="weui-form-preview">
+                    <div class="weui-form-preview__hd">
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label"><h3>提前还款</h3></label>
+                            <div class="icon-top icon-css-arrow"><i class="icon-arrow1"></i><i class="icon-arrow2"></i></div>
+                        </div>
+                    </div>
+                    <div class="weui-form-preview__bd" style="display: block;">
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">还款金额</label>
+                            <span class="weui-form-preview__value"><h2 class="text-bold-red">2000元</h2></span>
+                        </div>
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">还款日期</label>
+                            <span class="weui-form-preview__value">2017.5.8</span>
+                        </div>
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">预约还款日期</label>
+                            <span class="weui-form-preview__value">2017.10.1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-form-preview">
+                    <div class="weui-form-preview__hd">
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label"><h3>提前还款</h3></label>
+                            <div class="icon-bottom icon-css-arrow"><i class="icon-arrow1"></i><i class="icon-arrow2"></i></div>
+                        </div>
+                    </div>
+                    <div class="weui-form-preview__bd">
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">还款金额</label>
+                            <span class="weui-form-preview__value"><h2 class="text-bold-red">2000元</h2></span>
+                        </div>
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">还款日期</label>
+                            <span class="weui-form-preview__value">2017.5.8</span>
+                        </div>
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">预约还款日期</label>
+                            <span class="weui-form-preview__value">2017.10.1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            $(".weui-form-preview__hd").click(function(){
+                $(this).siblings(".weui-form-preview__bd").toggle();
+                $(this).find(".icon-css-arrow").toggleClass("icon-top");
+                $(this).find(".icon-css-arrow").toggleClass("icon-bottom");
+            });
+        </script>
+</body>
+</html>

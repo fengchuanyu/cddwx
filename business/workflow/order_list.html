@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="../../resources/css/base/main.css"/>
+        <link rel="stylesheet" type="text/css" href="../../resources/css/base/order.css"/>
+        <link rel="stylesheet" type="text/css" href="../../resources/css/weui/dist/style/weui.css"/>
+        <script src="../../js/base/zepto.js" type="text/javascript" charset="utf-8"></script>
+        <title>我的订单</title>
+    </head>
+    <body>
+        <div class="container order_list_page">
+            <div class="weui-search-bar" id="searchBar">
+                <form class="weui-search-bar__form">
+                    <div class="weui-search-bar__box">
+                        <i class="weui-icon-search"></i>
+                        <input type="search" class="weui-search-bar__input " id="searchInput" placeholder="搜索" required="">
+                        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                    </div>
+                    <label class="weui-search-bar__label" id="searchText">
+                        <i class="weui-icon-search"></i>
+                        <span>搜索</span>
+                    </label>
+                </form>
+                <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+            </div>
+            <div class="weui-flex wx-list-top">
+                <div class="weui-flex__item"><div class="placeholder">订单号</div></div>
+                <div class="weui-flex__item"><div class="placeholder olp_center">贷款金额</div></div>
+                <div class="weui-flex__item"><div class="placeholder">贷款时间</div></div>
+            </div> 
+            <div class="weui-cells ol_cell">
+                <a class="weui-cell weui-cell_access" href="">
+                    <div class="weui-cell__bd">
+                        <p>1001</p>
+                    </div>
+                    <div class="weui-cell__bd wcb_center">张三</div>
+                    <div class="weui-cell__ft">
+                        <span class="text_yellow">30,000</span>
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="">
+                    <div class="weui-cell__bd">
+                        <p>1001</p>
+                    </div>
+                    <div class="weui-cell__bd wcb_center">张三</div>
+                    <div class="weui-cell__ft">
+                        <span class="text_yellow">30,000</span>
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="">
+                    <div class="weui-cell__bd">
+                        <p>1001</p>
+                    </div>
+                    <div class="weui-cell__bd wcb_center">张三</div>
+                    <div class="weui-cell__ft">
+                        <span class="text_yellow">30,000</span>
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="">
+                    <div class="weui-cell__bd">
+                        <p>1001</p>
+                    </div>
+                    <div class="weui-cell__bd wcb_center">张三</div>
+                    <div class="weui-cell__ft">
+                        <span class="text_yellow">30,000</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $("#searchText").click(function(){
+                $("#searchBar").addClass("weui-search-bar_focusing");
+                $("#searchInput").focus();
+            });
+            $("#searchCancel").click(function(){searchCancel();});
+            $("#searchInput").blur(function(){searchCancel();});
+            function searchCancel(){
+                $("#searchBar").removeClass("weui-search-bar_focusing");
+                $("#searchInput").blur();
+                $("#searchInput").val("");
+            }
+        </script>
+</body>
+</html>

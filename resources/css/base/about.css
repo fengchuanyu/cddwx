@@ -1,0 +1,24 @@
+img{
+	width: 100%;
+}
+.au_text{
+	color: #666;
+	text-indent:35px;
+	padding:15px;
+}
+.qr_code_img{
+	float:left;
+	width: 50%;
+	text-align: center;
+}
+.qr_code_img img{
+	width: 70%;
+}
+.qr_code_img:last-child img{
+	margin-top: -4px;
+	width: 75%;
+}
+.qr_code_img p{
+	color: #666;
+	font-size: 15px;
+}

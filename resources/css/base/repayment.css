@@ -1,0 +1,241 @@
+.select_text_change div{
+	display: none;
+}
+.select_text_change .active{
+	display: block;
+}
+.select_text_change a:first-child{
+	margin-right: 5px;
+}
+.repayment_list_page .weui-flex__item {
+	padding:11px 0;
+	text-align: center;
+	font-size: 15px;
+}
+.repayment_list_page .weui-flex__item .olp_center{
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+.repayment_list_page .weui-cells{
+	margin-top: 0;
+}
+
+.repayment_list_page .weui-cell__ft span{
+	display: inline-block;
+	width: 58px;
+	text-align: left;
+}
+.repayment_list_page .weui-cell__bd p{
+	text-align: center;
+    width: 98px;
+    min-height: 26px;
+}
+.repayment_list_page .text_yellow{
+	font-weight: bolder;
+    padding-left: 20px;
+}
+.repayment_detail_list_page .weui-form-preview__bd{
+	display: none;
+}
+.repayment_detail_list_page .weui-form-preview__label{
+	color: #666;
+}
+.repayment_detail_list_page .weui-form-preview{
+	margin-top: 15px
+}
+.repayment_detail_list_page .icon-css-arrow{
+	left:90%;
+}
+.repayment_continue_list_page .weui-cells{
+	margin-top: 0;
+}  
+.repayment_continue_list_page .cell_left_text{
+	width: 100px;
+}
+.repayment_continue_list_page .select_text a{
+	display: inline-block;
+	margin-right: 15px;
+	height: 100%;
+}
+.repayment_continue_list_page .select_text a:active{
+	background-color: #eee;
+}
+.repayment_continue_list_page .select_text .active{
+	color: #E73D2E;
+}
+.repayment_continue_list_page .weui-cell__ft{
+	color: #333;
+}
+.advance_repayment_list_page .weui-cells{
+	margin-top: 0;
+}
+
+.advance_repayment_list_page .wx-top-border div{margin-left: -66px;}
+.advance_repayment_list_page .weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before{
+	color: #ff7101;
+	margin-left: 0;
+}
+.advance_repayment_list_page .weui-cells_checkbox .weui-icon-checked:before {
+	margin-left: 0;
+}
+.repayment_detail_page .weui-form-preview__item{
+	height: 35px;
+	color: #666;
+}
+.repayment_detail_page .weui-form-preview__label{
+	text-align-last:left;
+	color: #666;
+}
+.repayment_detail_page .weui-form-preview__bd{
+	padding:20px 15px;
+	text-align:left;
+	font-size: 15px;
+}
+.repayment_detail_page .view_rep_info{
+	position: absolute;
+	right: 15px;
+	width: 100px;
+	text-align: right;
+}
+.repayment_detail_page .weui-icon-info-circle{
+	margin-top: -3px;
+	font-weight:bold;
+	color: #ff7300;
+	font-size: 15px;
+}
+.repayment_detail_page .weui-cell__ft{
+	color: #666;
+}
+.repayment_detail_page .rd_more_info .weui-cell__bd{
+	text-align: center;
+}
+.repayment_detail_page .rd_more_info .weui-cell__bd p:last-child{
+	font-size: 16px;
+	font-weight: bolder;
+}
+.repayment_detail_page .weui-cells{
+	margin-top: 10px;
+}
+.repayment_detail_page .rd_more_info .weui-cell__ft:after{
+	border-color: #E73D2E;
+}
+.repayment_detail_page .circle_progress{
+	position: absolute;
+	top:75px;
+	right: 40px;
+}
+.repayment_detail_page .cp_h5{
+    zoom:0.5;
+	position: absolute;
+	top:0;
+	right: 0;
+	z-index: 10;
+}
+.repayment_detail_page .text_blue{
+	text-align: center;
+	padding-top: 10px;
+}
+.repayment_detail_page .cp_bg{
+	position: absolute;
+	z-index: 8;
+	top: 1px;
+	right: 1px;
+	width: 98px;
+	height:98px;
+	border: 10px solid #ddd;
+	border-radius:120px; 
+}
+.repayment_detail_list_page .weui-form-preview__bd{
+	font-size: 15px;
+}
+
+
+
+
+.advance_repayment_list_page .weui-flex__item {
+	padding:11px 0;
+	text-align: center;
+	font-size: 15px;
+}
+.advance_repayment_list_page .weui-flex__item .olp_center{
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+.advance_repayment_list_page .weui-check__label .weui-cell__bd:nth-child(4) p{
+	text-align: center;
+}
+.advance_repayment_list_page .arl_cell_left{
+	float: left;
+}
+.advance_repayment_list_page .arl_cell_left i{
+	margin:10px 5px 0 0;
+}
+.advance_repayment_list_page .arl_cell_left p{
+	font-size: 15px;
+}
+.advance_repayment_list_page .arl_cell_left p:first-child{
+	font-size: 15px;
+	color: #333;
+}
+.advance_repayment_list_page .arl_cell_left p{
+	font-size: 13px;
+	height: 18px;
+	color: #999;
+}
+.advance_repayment_list_page .weui-cell__bd{
+	text-align: center;
+}
+.advance_repayment_list_page .weui-cell__bd:nth-child(4){
+	padding-left: 10px;
+}
+.advance_repayment_list_page .weui-cells_checkbox .weui-cell__hd{
+	padding-right: 10px;
+}
+.advance_repayment_list_page .weui-cells_checkbox .weui-icon-checked:before{
+	font-size: 20px;
+}
+.advance_repayment_list_page .weui-flex{
+	padding:0 10px;
+}
+.advance_repayment_list_page .wf_bottom{
+	color: #333;
+	width: 100%;
+	padding:5px 10px;
+}
+.advance_repayment_list_page .wf_bottom:before{
+	border-top:1px solid #e5e5e5;
+}
+.advance_repayment_list_page .wf_bottom .weui-flex__item:nth-child(1){
+	text-align: left;
+}
+.advance_repayment_list_page .wf_bottom .weui-flex__item:nth-child(1) i{
+	margin-left: 5px;
+	margin-right:-5px;
+}
+.advance_repayment_list_page .weui-cell:last-child{
+	padding:0;
+}
+.advance_repayment_list_page .weui-cell:before{
+	
+}
+.advance_repayment_list_page .wx-list-top{
+	min-height: 44px
+}
+
+.advance_repayment_list_page .wx-list-top:after{
+	content: " ";
+    position: absolute;
+    left: 0;
+    top: 44px;
+    right: 0;
+    height: 1px;
+    
+    border-bottom: 1px solid #e5e5e5;
+    color: #e5e5e5;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    
+    z-index: 2;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="../../resources/css/base/main.css"/>
+        <link rel="stylesheet" type="text/css" href="../../resources/css/base/repayment.css"/>
+        <link rel="stylesheet" type="text/css" href="../../resources/css/weui/dist/style/weui.css"/>
+        <script src="../../js/base/zepto.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../js/base/progress.js" type="text/javascript" charset="utf-8"></script>
+        <title>我的还款</title>
+    </head>
+    <body>
+        <div class="container repayment_detail_page">
+           <div class="weui-form-preview">
+                <div class="circle_progress">
+                    <canvas id="cpH5" class="cp_h5"></canvas>
+                    <div class="cp_bg"></div>
+                </div>
+                <div class="weui-form-preview__bd">
+                    <div class="weui-form-preview__item">
+                        <label class="weui-form-preview__label">订单号</label>
+                        <span class="weui-form-preview__value">5216548789765</span>
+                    </div>
+                    <div class="weui-form-preview__item">
+                        <label class="weui-form-preview__label">借款时间</label>
+                        <span class="weui-form-preview__value">2017/5/8</span>
+                    </div>
+                    <div class="weui-form-preview__item">
+                        <label class="weui-form-preview__label">借款金额</label>
+                        <span class="weui-form-preview__value text-bold-red">1000,00元</span>
+                    </div>
+                    <div class="weui-form-preview__item">
+                        <label class="weui-form-preview__label">借款时长</label>
+                        <span class="weui-form-preview__value">3个月</span>
+                    </div>
+                    <div class="weui-form-preview__item">
+                        <label class="weui-form-preview__label">月利率</label>
+                        <span class="weui-form-preview__value">1%</span>
+                    </div>
+                    <div class="weui-form-preview__item">
+                        <label class="weui-form-preview__label">还款期数</label>
+                        <span class="weui-form-preview__value">3期</span>
+                    </div>
+                    <div class="weui-form-preview__item">
+                        <label class="weui-form-preview__label">还款方式</label>
+                        <span class="weui-form-preview__value">
+                            <span>现金分期</span>
+                            <span class="view_rep_info text_yellow"><i class="weui-icon-info-circle"></i>详情查询</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <p>提前还清借款</p>
+                    </div>
+                    <div class="weui-cell__ft small-text">供一笔</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <p>申请续贷</p>
+                    </div>
+                    <div class="weui-cell__ft small-text">共一笔</div>
+                </a>
+            </div>
+            <div class="weui-cells rd_more_info">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <p>已还金额</p>
+                        <p>0.00</p>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>待还金额</p>
+                        <p>10.35</p>
+                    </div>
+                    <div class="weui-cell__bd text_red">
+                        <p>本期应还</p>
+                        <p>3.43</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="weui-flex">
+                <div class="weui-flex__item text_blue"><span>5月17日将从招商银行(9056)自动扣款</span></div>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+             window.onload = function(){
+                new Progress().renderOne('cpH5',240,12,75);
+            }
+        </script>
+</body>
+</html>

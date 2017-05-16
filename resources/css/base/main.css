@@ -1,0 +1,208 @@
+body{background-color:#f6f6f6;color: #666;font-size: 12px;}
+
+.container .weui-cells{font-size: 15px;}
+.center_info_spacing{
+	text-align: center;
+}
+.text-center{
+	text-align: center;
+}
+.font-bolder{
+	font-weight: bolder;
+}
+.small-text{
+	font-size: 13px;
+}
+.cancel-text{
+	color: #F43530;
+}
+.text_blue{
+	color:#0e82cf;
+}
+.text_yellow{
+	color:#ff7300;
+}
+.text_red{
+	color: #e93e2d;
+}
+.text-bold-red{
+	font-weight: bold;
+	color: #e93e2d;
+}
+.text-bold-blue{
+	font-weight: bold;
+	color: #3877c6;
+}
+.success-text{
+	color: #09BB07;
+}
+.weui-footer__text{
+	position: fixed;
+	bottom: 10px;
+	left:50%;
+	margin-left: -88px;
+}
+/*icon start*/
+.cddd-icon{
+	position: relative;
+    display: inline-block;
+	width: 17px;
+    height: 17px;
+    background-image: url(../../images/icon_ph.gif);
+}
+.icon-user{
+	background-position: -19px -21px;
+}
+.icon-lock{
+	background-position: -1px -21px;
+}
+.icon-eye{
+	background-position: -37px -21px;
+}
+.icon-red-user{
+	background-position:-73px -1px;
+}
+.icon-red-phone{
+	background-position:-19px -1px;
+}
+.icon-red-data{
+	background-position:-37px -1px;
+}
+.icon-red-screenshot{
+	background-position:-55px -1px;
+}
+.icon-red-exclamation-sign{
+	background-position:-91px -1px;
+}
+.icon-red-bookmark{
+	background-position:-109px -1px;
+}
+.icon-red-edit{
+	background-position:-1px -1px;
+}
+.icon-red-ruller{
+	background-position:-55px -21px;
+}
+.icon-red-drawer{
+	background-position:-73px -21px;
+}
+/*css 箭头*/
+.icon-arrow1,.icon-arrow2{
+    width:0;
+    height:0;
+    display:block;
+    position:absolute;
+    left:0;
+    z-index: 5;/*兼容ie8-*/
+    border-bottom:10px transparent dashed;
+    border-left:10px transparent dashed;
+    border-right:10px transparent dashed;
+    border-top:10px transparent dashed;
+    overflow:hidden;
+}
+.icon-css-arrow{
+	width:20px;
+    height:20px;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: 2;/*兼容ie8-*/
+    border:0;
+}
+
+/*下箭头*/
+.icon-bottom{
+	top:24px;
+}
+.icon-bottom .icon-arrow1{
+    top:1px;/*重要*/
+    border-top:10px #666 solid;
+}
+.icon-bottom .icon-arrow2{
+    border-top:10px white solid;
+}
+/*右箭头*/
+.icon-right{
+	top:18px;
+}
+.icon-right .icon-arrow1{
+    left:1px;/*重要*/
+    border-left:10px #666 solid;
+}
+.icon-right .icon-arrow2{
+    border-left:10px white solid;
+}
+/*左箭头*/
+.icon-left{
+	top:18px;
+}
+.icon-left .icon-arrow1{
+    border-right:10px #666 solid;
+}
+.icon-left .icon-arrow2{
+    left:1px;/*重要*/
+    border-right:10px white solid;
+}
+/*上箭头*/
+.icon-top{
+	top:12px;
+}
+.icon-top .icon-arrow1{
+    border-bottom:10px #666 solid;
+}
+.icon-top .icon-arrow2{
+    top:1px;/*重要*/
+    border-bottom:10px white solid;
+}
+.hide_page{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	min-height: 100%;
+	background-color: #f6f6f6;
+	z-index: 5;
+}
+.wx-list-top{
+	background-color: #fafafa;
+	color: #333;
+}
+.wx-top-border{
+	position: absolute;
+	width: 100%;
+	top:0;
+}
+.wx-top-border div{
+	position: absolute;
+	left: 50%;
+	top:10px;
+	margin-left: -50px;
+	height: 30px;
+	width: 95px;
+	border-left: 1px solid #ddd;
+	border-right:1px solid #ddd; 
+}
+@font-face {
+	font-family: "iconfont";
+  	src:url('../../images/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;  
+}
+[class^="icon-icon-"]:before, [class*=" icon-icon-"]:before {
+    display: inline-block;
+    margin-left: .2em;
+    margin-right: .15em;
+}
+.icon-icon-cancel:before { 
+	content: "\e60b"; 
+}
+.cddd_dialog{
+	opacity: 0;
+}
+
+
