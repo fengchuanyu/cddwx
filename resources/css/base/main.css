@@ -42,57 +42,7 @@ body{background-color:#f6f6f6;color: #666;font-size: 12px;}
 	left:50%;
 	margin-left: -88px;
 }
-/*icon start*/
-.red-icon{
-	width: 17px;
-	color: #e64340;
-	font-weight: bolder;
-}
-/*
-.cddd-icon{
-	position: relative;
-    display: inline-block;
-	width: 17px;
-    height: 17px;
-    background-image: url(../../images/icon_ph.gif);
-}
-.icon-user{
-	background-position: -19px -21px;
-}
-.icon-lock{
-	background-position: -1px -21px;
-}
-.icon-eye{
-	background-position: -37px -21px;
-}
-.icon-red-user{
-	background-position:-73px -1px;
-}
-.icon-red-phone{
-	background-position:-19px -1px;
-}
-.icon-red-data{
-	background-position:-37px -1px;
-}
-.icon-red-screenshot{
-	background-position:-55px -1px;
-}
-.icon-red-exclamation-sign{
-	background-position:-91px -1px;
-}
-.icon-red-bookmark{
-	background-position:-109px -1px;
-}
-.icon-red-edit{
-	background-position:-1px -1px;
-}
-.icon-red-ruller{
-	background-position:-55px -21px;
-}
-.icon-red-drawer{
-	background-position:-73px -21px;
-}
-*/
+
 /*css 箭头*/
 .icon-arrow1,.icon-arrow2{
     width:0;
@@ -119,7 +69,7 @@ body{background-color:#f6f6f6;color: #666;font-size: 12px;}
 
 /*下箭头*/
 .icon-bottom{
-	top:24px;
+	top:17px;
 }
 .icon-bottom .icon-arrow1{
     top:1px;/*重要*/
@@ -152,7 +102,7 @@ body{background-color:#f6f6f6;color: #666;font-size: 12px;}
 }
 /*上箭头*/
 .icon-top{
-	top:12px;
+	top:9px;
 }
 .icon-top .icon-arrow1{
     border-bottom:10px #666 solid;
@@ -205,6 +155,11 @@ body{background-color:#f6f6f6;color: #666;font-size: 12px;}
     display: inline-block;
     margin-left: .2em;
     margin-right: .15em;
+}
+.red-icon{
+	width: 17px;
+	color: #e64340;
+	font-weight: bolder;
 }
 .cddd-icon-cancel:before { content: "\e610"; }
 

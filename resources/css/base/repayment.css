@@ -46,6 +46,12 @@
 .repayment_detail_list_page .icon-css-arrow{
 	left:90%;
 }
+.repayment_detail_list_page .weui-form-preview__bd .weui-form-preview__item:first-child .weui-form-preview__label{
+	margin-top: 10px;
+}
+.repayment_detail_list_page .weui-form-preview__hd:after{
+	left: 0;
+}
 .repayment_continue_list_page .weui-cells{
 	margin-top: 0;
 }  
@@ -69,8 +75,9 @@
 .advance_repayment_list_page .weui-cells{
 	margin-top: 0;
 }
-
-.advance_repayment_list_page .wx-top-border div{margin-left: -66px;}
+.advance_repayment_list_page .wx-top-border div{
+	margin-left: -66px;
+}
 .advance_repayment_list_page .weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before{
 	color: #ff7101;
 	margin-left: 0;
@@ -247,4 +254,19 @@
 }
 .advance_repayment_list_page .weui-cells:after{
 	z-index: 0;
+}
+.advance_repayment_info_page .weui-cells{
+	margin-top: 0
+}
+.advance_repayment_info_page .arl_cell_left p{
+	text-align: center;
+}
+.advance_repayment_info_page .arl_cell_left p:last-child{
+	margin-top: -5px;
+	color: #aaa;
+	font-size: 13px;
+}
+.advance_repayment_info_page .weui-cell_access .weui-cell__ft{
+	color: #666;
+	font-size: 15px;
 }
