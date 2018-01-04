@@ -14,5 +14,5 @@ function formatMoney(number, places, symbol, thousand, decimal) {
 formatMoney(54321); // $54,321
 formatMoney(12345, 0, "£ "); // £ 12,345
 formatMoney(12345, 2, "£ "); // £ 12,345.00
-formatMoney(12345.232, 2, "£ "); // £ 12,345.23
+formatMoney(12345.232, 2, "£ "); // £ 12,345.23 test
 */
